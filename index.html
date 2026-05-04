@@ -1,0 +1,192 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KIMSTORE MIDMAN</title>
+<style>
+body {
+  margin: 0;
+  background: #000;
+  font-family: Arial;
+  color: white;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  color: gold;
+  margin-top: 25px;
+  font-size: 28px;
+}
+
+/* CARD */
+.card {
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255,215,0,0.6);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px gold;
+}
+
+/* TOP */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PROFILE */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid gold;
+}
+
+/* NAME */
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* BADGE */
+.badge {
+  font-size: 12px;
+  background: gold;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(to right, gold, #ffd700);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SMALL BUTTON */
+.small-btn {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #222;
+  border: 1px solid gold;
+  color: white;
+  width: 48%;
+  cursor: pointer;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* VERIFIED */
+.check {
+  color: #00c3ff;
+}
+
+/* MUSIC PLAYER */
+.music {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 15px gold;
+}
+
+.music button {
+  background: gold;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1 class="title">KIMSTORE MIDMAN</h1>
+<!-- KIM -->
+<div class="card">
+  <div class="top">
+    <div class="profile">
+      <img src="https://via.placeholder.com/70">
+      <div>
+        <div class="badge">OWNER</div>
+        <div class="name">KIM <span class="check">✔</span></div>
+      </div>
+    </div>
+<a href="https://wa.me/601137444091">
+  <button class="btn">WHATSAPP</button>
+</a>
+  </div>
+  <div class="row">
+    <a href="#"><button class="small-btn">FEEDBACK</button></a>
+    <a href="#"><button class="small-btn">INFO SCAMMER</button></a>
+  </div>
+</div>
+<!-- HAFIZ -->
+<div class="card">
+  <div class="top">
+    <div class="profile">
+      <img src="https://via.placeholder.com/70">
+      <div>
+        <div class="badge">VERIFIED MIDMAN</div>
+        <div class="name">HAFIZ <span class="check">✔</span></div>
+      </div>
+    </div>
+<a href="https://wa.me/60111111111">
+  <button class="btn">WHATSAPP</button>
+</a>
+  </div>
+<!-- MUSIC -->
+<div class="music">
+  <span>🎵 Music</span>
+  <button onclick="toggleMusic()">Play / Pause</button>
+</div>
+<audio id="bgmusic" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<script>
+function toggleMusic() {
+  var music = document.getElementById("bgmusic");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+</script>
+</body>
+</html>
+SoundHelix-Song-1.mp3
+https://via.placeholder.com/70
+
